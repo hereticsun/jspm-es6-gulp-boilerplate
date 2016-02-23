@@ -16,7 +16,7 @@
  * @example
  *     @include font(14, 16);
  */
-@mixin font($fontSize: 1.6, $lineHeight: $fontSize * 1.5, $fontFamily: inherit) {
+@mixin font($fontSize: ($em-base), $lineHeight: $fontSize * 1.5, $fontFamily: inherit) {
     $lteIE8: false !default;
 
     @if $fontFamily != inherit {
